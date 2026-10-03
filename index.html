@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2563eb">
+
+  <title>Pocket Store</title>
+
+  <link rel="manifest" href="./manifest.json">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <header class="barra">
+    <div class="contenedor">
+      <h1>Pocket Store</h1>
+      <p>Tu catálogo de productos</p>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <section class="herramientas" aria-label="Opciones del catálogo">
+      <div>
+        <h2>Productos</h2>
+        <p id="conexion" role="status">Comprobando conexión...</p>
+      </div>
+
+      <button id="actualizar" type="button">Actualizar</button>
+    </section>
+
+    <label for="busqueda">Buscar entre los productos cargados</label>
+    <input
+      id="busqueda"
+      type="search"
+      placeholder="Escribe el nombre de un producto"
+      disabled
+    >
+
+    <p id="mensaje" class="mensaje" role="status">
+      Cargando productos...
+    </p>
+
+    <section
+      id="productos"
+      class="productos"
+      aria-label="Listado de productos"
+    ></section>
+  </main>
+
+  <footer>
+    <p>Pocket Store · Proyecto de Aplicaciones Web Progresivas</p>
+    <p>Catálogo de demostración. Sin compras reales.</p>
+  </footer>
+</body>
+</html>
